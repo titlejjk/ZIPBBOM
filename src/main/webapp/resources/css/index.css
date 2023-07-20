@@ -1,0 +1,133 @@
+@import url(./reset.css);
+
+
+.wrapper{
+    width: 100%;
+    height: auto ;
+    text-align: center;
+    margin:0 auto;
+}
+
+header{    
+    padding: 1em 0;
+    max-height: 40px;
+    background-color: var(--color-white);
+    font-size: 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 99;  
+    
+}
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    text-align: center;
+  }
+  #top-logo img{
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    padding-left: 3rem;
+    zoom:0.9;
+  }
+  
+  .navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5em;
+  }
+  .navbar ul li{
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  .navbar ul li.on a{
+    font-weight: bold;
+    color:var(--color-blue);
+  }
+  .navbar ul li:hover, .navbar ul li:active, .navbar ul li:focus {
+    color : var(--color-blue);
+  }
+  
+
+  .main-img img{
+    width: 100%;
+    height: 980px;
+  }
+
+.main-img{
+    position: relative;
+}
+
+.main-box{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-title{
+    color: var(--color-white);
+    width: 100%;
+}
+.main-title h1{
+    line-height: 6rem;
+    font-size: 5em;
+}
+
+.main-title p{
+    margin-top: 5rem;
+    font-size: 2em;
+    
+}
+
+#loginBtn{
+    margin-top: 5rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 15%;
+    font-size: 2rem;
+    padding:1rem;
+    font-weight: bold;
+    border: none;
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+}
+
+section{
+    margin-top: 4rem;
+    width: 100%;
+    height: 1080px;
+}
+
+.section-title{
+    font-size: 3em;
+    font-weight: bold;
+    padding: 2rem;
+}
+.best-content{
+    margin-top: 6em;
+}
+.best-context-box{
+    width: 300px;
+    height: 200px;
+    border: 1px solid var(--color-darken);
+    font-size: 2.5rem;
+    
+  
+}
+
+.best-context-box img{
+    width: 330px;
+    height: auto;
+}
+
+.best-content ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

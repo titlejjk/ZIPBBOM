@@ -1,0 +1,30 @@
+
+/* 초기화 */
+*{margin: 0;padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none;color:inherit}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%;
+margin:initial}
+body{line-height: 1;}
+.cf::after{content:'';width: 0;height: 0;font-size: 0;display: block;clear: both;}
+.blind{display: none;}
+fieldset{border:none}
+caption{display: none;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    word-break: keep-all;
+    font-size: 62.5%;
+}
+
+:root{
+    --color-light-blue : #99ccff;
+    --color-blue : #0064ff;
+    --color-darken-blue:#330099
+    --color-gray  :#999;
+    --color-gray-darken  :#333;
+    --color-light-gray:  #E8E8E8;
+    --color-white : white;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="members">
+	<insert id="insert" parameterType="memberDto">
+		INSERT INTO members(id, pwd, email, regdate)
+		VALUES(#{id}, #{pwd}, #{email}, SYSDATE)
+	</insert>
+	
+	<select id="getData" parameterType = "string" resultType = "memberDto">
+		SELECT id, pwd, profile, email, regdate
+		FROM users_table
+		WHERE id = #{id}
+	</select>
+	<update id="updatePwd" parameterType = "memberDto">
+		UPDATE users_table
+		SET pwd = #{newPwd}
+		WHERE id = #{id}
+	</update>
+	<update id="update" parameterType = "memberDto">
+		UPDATE users_table
+		SET email = #{email}, profile = #{profile}
+		WHERE id = #{id}
+	</update>
+	<delete id="delete" parameterType = "string">
+		DELETE FROM users_table
+		WHERE id = #{id}
+	</delete>
+</mapper>
