@@ -35,7 +35,7 @@
                 <div class="main-box">
                     <div class="main-title">
                         <h1>오늘 너네 집에서 파티할건데 너도 올래?</h1>
-                    <p>당신의 집을 소개해주세요!</p>
+                    <p>당신의 집을 소개해주세요!!</p>
                     </div>
                     
                     <button type="button" id="loginBtn">놀러가기</button>
